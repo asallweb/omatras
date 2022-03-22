@@ -18,6 +18,14 @@
   margin-bottom: 15px;
 }
 
+.stories .title-sidebar {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 26px;
+}
+
 .stories .col-2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -46,6 +54,26 @@
 }
 
 .stories .col-2 .stories-list .swiper-button-next {
+  right: -12px;
+  width: 25px;
+  height: 25px;
+  margin-top: -12.5px;
+}
+
+.stories-sidebar {
+  max-width: 294px;
+  padding: 0;
+}
+
+.stories-sidebar .stories-sidebar-list {
+  position: relative;
+}
+
+.stories-sidebar .stories-sidebar-list .title {
+  font-size: 18px;
+}
+
+.stories-sidebar .stories-sidebar-list .swiper-button-next {
   right: -12px;
   width: 25px;
   height: 25px;

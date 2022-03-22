@@ -1,9 +1,4 @@
 $(document).ready(function () {
-	// $('.stories').slick({
-	// 	infinite: true,
-	// 	slidesToShow: 8,
-	// 	slidesToScroll: 1
-	// });
 	var swiper = new Swiper(".stories-main .swiper", {
 		slidesPerView: 8,
 		spaceBetween: 17,
@@ -17,7 +12,13 @@ $(document).ready(function () {
 		spaceBetween: 17,
 		navigation: {
 			nextEl: ".stories-list .swiper-button-next",
-			prevEl: ".stories-list .swiper-button-prev",
+		},
+	});
+	var swiper = new Swiper(".stories-sidebar .swiper", {
+		slidesPerView: 2,
+		spaceBetween: 20,
+		navigation: {
+			nextEl: ".stories-sidebar .swiper-button-next",
 		},
 	});
 });
