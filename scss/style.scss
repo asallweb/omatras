@@ -1,9 +1,45 @@
+*{
+	box-sizing: border-box;
+}
 .stories{
 	font-family: 'Roboto', sans-serif;
 	max-width: 1320px;
-	padding: 0 15px;
+	padding: 0 60px;
 	margin: 0 auto;
-	display: flex;
+	position: relative;
+	.title{
+		font-weight: 500;
+		font-size: 30px;
+		color: #000;
+		margin-bottom: 15px;
+	}
+	.col-2{
+		display: flex;
+		grid-gap: 15px 50px;
+		.content-text{
+			font-size: 14px;
+			line-height: 20px;
+			font-weight: 400;
+			color: #000;
+			.detail{
+				font-size: 14px;
+				line-height: 21px;
+				color: #292929;
+				opacity: 0.5;
+			}
+		}
+		.stories-list{
+			position: relative;
+			width: 50%;
+			max-width: 590px;
+			.swiper-button-next{
+				right: -12px;
+				width: 25px;
+				height: 25px;
+				margin-top: -12.5px;
+			}
+		}
+	}
 	.item{
 		position: relative;
 		background-repeat: no-repeat;
@@ -15,7 +51,6 @@
 		font-size: 12px;
 		text-align: left;
 		color: #fff;
-		box-sizing: border-box;
 		.name{
 			margin-bottom: 2px;
 		}
@@ -44,7 +79,7 @@
 		}
 	}
 }
-.swiper{
+.stories{
 	.swiper-button-next, .swiper-button-prev{
 		width: 35px;
 		height: 35px;
@@ -54,6 +89,8 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		z-index: 1;
+		margin-top: -17.5px;
 		&::after{
 			content:"";
 			background-repeat: no-repeat;
