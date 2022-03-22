@@ -76,5 +76,21 @@
 
 .swiper .swiper-button-next::after, .swiper .swiper-button-prev::after {
   content: "";
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 4px;
+  height: 8px;
+}
+
+.swiper .swiper-button-next::after {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0IiBoZWlnaHQ9IjgiIHZpZXdCb3g9IjAgMCA0IDgiPjxwYXRoIGQ9Ik0wLDMuMjg5LjgyNCw0LDMuOTg5LDEuNCw3LjE1NCw0LDgsMy4yODksMy45ODksMFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQpIHJvdGF0ZSg5MCkiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==");
+}
+
+.swiper .swiper-button-prev::after {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0IiBoZWlnaHQ9IjgiIHZpZXdCb3g9IjAgMCA0IDgiPjxwYXRoIGQ9Ik0wLC43MTEuODI0LDAsMy45ODksMi42LDcuMTU0LDAsOCwuNzExLDMuOTg5LDRaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0KSByb3RhdGUoOTApIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=");
+}
+
+.swiper .swiper-button-next.swiper-button-disabled, .swiper .swiper-button-prev.swiper-button-disabled {
+  opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */
