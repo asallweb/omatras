@@ -93,8 +93,6 @@
 			<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 			<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 		</section>
-
-
 		<h1>Листинг</h1>
 		<section class="stories">
 			<div class="title">Детские матрасы</div>
@@ -268,20 +266,35 @@
 		</section>
 		<!-- <button class="show__popup-btn" data-popup="firstPopup">Тип деятельности</button> -->
 	</main>
-	<!-- <div class="popup" id="firstPopup">
+	<div class="popup" id="firstPopup">
 		<div class="popup__inner">
-			<div class="popup__content animate__animated" data-animatedin="animate__fadeInDown" data-animatedout="animate__fadeOutDown">
-				<button class="popup__close close-popup">X</button>
-				<h1>Выберите тип предпринимательской деятельности:</h1>
-				<button class="show__popup-btn close-popup" data-popup="secondPopup">Физ.лицо</button>
-				<button class="show__popup-btn close-popup" data-popup="thirdPopup">Юр.лицо</button>
+			<div class="popup__content">
+				<button class="popup__close close-popup"></button>
+				<div class="popup-slider">
+					<div class="swiper">
+						<div class="swiper-wrapper">
+							<a href="" class="item swiper-slide">
+								<img src="./images/content/img_9.png" alt="">
+							</a>
+							<a href="" class="item swiper-slide">
+								<img src="./images/content/img_9.png" alt="">
+							</a>
+							<a href="" class="item swiper-slide">
+								<img src="./images/content/img_9.png" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+				</div>
 			</div>
 		</div>
-	</div> -->
+	</div>
 </body>
 
 <link href="css/style.css" rel="stylesheet">
 
 <script src="js/jquery.min.js"></script>
+<script src="js/popup.js"></script>
 <script src="js/main.js"></script>
 </html>

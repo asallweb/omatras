@@ -1,4 +1,8 @@
 $(document).ready(function () {
+
+	/* Popup initialize */
+	popupInitialize();
+
 	var swiper = new Swiper(".stories-main .swiper", {
 		slidesPerView: 8,
 		spaceBetween: 17,
@@ -19,6 +23,12 @@ $(document).ready(function () {
 		spaceBetween: 20,
 		navigation: {
 			nextEl: ".stories-sidebar .swiper-button-next",
+		},
+	});
+	var swiper = new Swiper(".popup-slider .swiper", {
+		navigation: {
+			nextEl: ".popup-slider .swiper-button-next",
+			prevEl: ".popup-slider .swiper-button-prev",
 		},
 	});
 });
