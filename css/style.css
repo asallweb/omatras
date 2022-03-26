@@ -3,6 +3,20 @@
           box-sizing: border-box;
 }
 
+.overflowed {
+  overflow: hidden;
+  padding-right: 17px !important;
+  touch-action: none;
+  -ms-touch-action: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+@media (max-width: 1024px) {
+  .overflowed {
+    padding-right: 0 !important;
+  }
+}
+
 .stories {
   font-family: 'Roboto', sans-serif;
   max-width: 1320px;
