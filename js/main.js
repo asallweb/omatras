@@ -52,7 +52,7 @@ $(document).ready(function () {
 	});
 	$('.popup .popup-detail').click(function(e){
 		e.preventDefault();
-		$('.popup .popup-body').slideToggle();
+		$(this).parent().find('.popup-body').slideToggle();
 		$(this).toggleClass('active');
 		if($(this).hasClass('active')){
 			$(this).html('Свернуть');

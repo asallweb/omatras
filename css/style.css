@@ -179,7 +179,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  z-index: 1;
+  z-index: 1 !important;
   margin-top: -17.5px;
 }
 
@@ -233,6 +233,7 @@
   z-index: 9;
   background-color: rgba(0, 0, 0, 0.7);
   overflow: hidden;
+  margin: 0;
 }
 
 .popup .popup__inner {
@@ -395,7 +396,6 @@
 
 .popup .popup-slider .item {
   display: block;
-  line-height: 0;
 }
 
 .popup .popup-slider .item img {
@@ -426,5 +426,11 @@
 .stories .swiper-button-next, .stories .swiper-button-prev {
   width: 35px;
   height: 35px;
+}
+
+.popup-slider .swiper-button-next, .popup-slider .swiper-button-prev {
+  width: 35px;
+  height: 35px;
+  top: 230px;
 }
 /*# sourceMappingURL=style.css.map */
