@@ -21,6 +21,7 @@ $(document).ready(function () {
 		spaceBetween: 17,
 		navigation: {
 			nextEl: ".stories-list .swiper-button-next",
+			prevEl: ".stories-sidebar .swiper-button-prev",
 		},
 		breakpoints: {
 			320: {
@@ -30,9 +31,10 @@ $(document).ready(function () {
 	});
 	var swiper = new Swiper(".stories-sidebar .swiper", {
 		slidesPerView: 2,
-		spaceBetween: 20,
+		spaceBetween: 10,
 		navigation: {
 			nextEl: ".stories-sidebar .swiper-button-next",
+			prevEl: ".stories-sidebar .swiper-button-prev",
 		},
 		breakpoints: {
 			320: {

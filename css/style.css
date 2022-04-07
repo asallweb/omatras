@@ -20,12 +20,11 @@
 .stories {
   font-family: 'Roboto', sans-serif;
   max-width: 1320px;
-  padding: 0 60px;
   margin: 0 auto;
   position: relative;
 }
 
-.stories .title {
+.stories .title, .stories h1 {
   font-weight: 500;
   font-size: 30px;
   color: #000;
@@ -45,6 +44,7 @@
   display: -ms-flexbox;
   display: flex;
   grid-gap: 15px 50px;
+  width: 100%;
 }
 
 .stories .col-2 .content-text {
@@ -52,6 +52,7 @@
   line-height: 20px;
   font-weight: 400;
   color: #000;
+  max-width: 50%;
 }
 
 .stories .col-2 .content-text .detail {
@@ -74,9 +75,17 @@
   margin-top: -12.5px;
 }
 
+.stories .col-2 .stories-list .swiper-button-prev {
+  left: -12px;
+  width: 25px;
+  height: 25px;
+  margin-top: -12.5px;
+}
+
 .stories-sidebar {
-  max-width: 294px;
+  max-width: 320px;
   padding: 0;
+  margin-bottom: 40px;
 }
 
 .stories-sidebar .stories-sidebar-list {
@@ -94,7 +103,15 @@
   margin-top: -12.5px;
 }
 
+.stories-sidebar .stories-sidebar-list .swiper-button-prev {
+  left: -12px;
+  width: 25px;
+  height: 25px;
+  margin-top: -12.5px;
+}
+
 .stories .item {
+  cursor: pointer;
   position: relative;
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -256,6 +273,7 @@
   width: 100%;
   max-width: 1195px;
   max-height: 100%;
+  height: 100%;
   overflow-y: auto;
   padding: 40px 80px;
   position: relative;
@@ -264,6 +282,10 @@
 
 .popup .popup__inner .popup__content .popup-slider {
   position: relative;
+}
+
+.popup .popup__inner .popup__content .popup-slider .item {
+  height: 100%;
 }
 
 .popup .popup__inner .popup__content .popup__close {
@@ -432,5 +454,9 @@
   width: 35px;
   height: 35px;
   top: 230px;
+}
+
+.popup-slider .swiper-pagination {
+  position: relative !important;
 }
 /*# sourceMappingURL=style.css.map */
