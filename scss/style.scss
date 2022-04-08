@@ -17,6 +17,7 @@
 	max-width: 1320px;
 	margin: 0 auto;
 	position: relative;
+	width: 100%;
 	.title, h1{
 		font-weight: 500;
 		font-size: 30px;
@@ -39,7 +40,7 @@
 			line-height: 20px;
 			font-weight: 400;
 			color: #000;
-			max-width: 50%;
+			max-width: 100%;
 			.detail{
 				font-size: 14px;
 				line-height: 21px;

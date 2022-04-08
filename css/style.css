@@ -22,6 +22,7 @@
   max-width: 1320px;
   margin: 0 auto;
   position: relative;
+  width: 100%;
 }
 
 .stories .title, .stories h1 {
@@ -52,7 +53,7 @@
   line-height: 20px;
   font-weight: 400;
   color: #000;
-  max-width: 50%;
+  max-width: 100%;
 }
 
 .stories .col-2 .content-text .detail {
