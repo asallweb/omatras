@@ -3,7 +3,7 @@ $(document).ready(function () {
 	/* Popup initialize */
 	popupInitialize();
 
-	var swiper = new Swiper(".stories-main .swiper", {
+	var swiperMain = new Swiper(".stories-main .swiper", {
 		slidesPerView: 8,
 		spaceBetween: 17,
 		navigation: {
@@ -16,7 +16,7 @@ $(document).ready(function () {
 			},
 		},
 	});
-	var swiper = new Swiper(".stories-list .swiper", {
+	var swiperList = new Swiper(".stories-list .swiper", {
 		slidesPerView: 4,
 		spaceBetween: 17,
 		navigation: {
@@ -29,7 +29,7 @@ $(document).ready(function () {
 			},
 		},
 	});
-	var swiper = new Swiper(".stories-sidebar .swiper", {
+	var swiperSidebar = new Swiper(".stories-sidebar .swiper", {
 		slidesPerView: 2,
 		spaceBetween: 10,
 		navigation: {
@@ -40,16 +40,6 @@ $(document).ready(function () {
 			320: {
 				slidesPerView: "auto",
 			},
-		},
-	});
-	var swiper = new Swiper(".popup-slider .swiper", {
-		navigation: {
-			nextEl: ".popup-slider .swiper-button-next",
-			prevEl: ".popup-slider .swiper-button-prev",
-		},
-		pagination: {
-			el: ".swiper-pagination",
-			clickable: true,
 		},
 	});
 	$('.popup .popup-detail').click(function(e){

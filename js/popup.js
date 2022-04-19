@@ -1,8 +1,21 @@
 function popupInitialize() {
 	$('.show__popup-btn').each(function () {
 		var idPopup = $(this).data('popup');
+		var idStory = $(this).data('story');
 		$(this).click(function () {
 			showPopup(idPopup);
+			
+			var swiperPopup = new Swiper(".popup-slider .swiper", {
+				navigation: {
+					nextEl: ".popup-slider .swiper-button-next",
+					prevEl: ".popup-slider .swiper-button-prev",
+				},
+				pagination: {
+					el: ".swiper-pagination",
+					clickable: true,
+				},
+			});
+			swiperPopup.slideTo(idStory);
 		});
 	});
 

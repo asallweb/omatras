@@ -65,7 +65,6 @@
 
 .stories .col-2 .stories-list {
   position: relative;
-  width: 50%;
   max-width: 590px;
 }
 
@@ -347,6 +346,7 @@
   background: #f3f3f3;
   padding: 40px;
   display: none;
+  color: #000;
 }
 
 .popup .popup__inner .popup__content .popup-body .title {
