@@ -42,7 +42,7 @@ $(document).ready(function () {
 			},
 		},
 	});
-	$('.popup .popup-detail').click(function(e){
+	$('.popup-stories .popup-detail').click(function(e){
 		e.preventDefault();
 		$(this).parent().find('.popup-body').slideToggle();
 		$(this).toggleClass('active');

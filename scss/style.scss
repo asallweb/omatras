@@ -194,7 +194,7 @@
 		}
 	}
 }
-.popup {
+.popup-stories {
 	font-family: 'Roboto', sans-serif;
 	display: none;
 	position: fixed;
@@ -377,4 +377,6 @@
 }
 .popup-slider .swiper-pagination{
 	position: relative !important;
+	display: flex;
+	justify-content: center;
 }
