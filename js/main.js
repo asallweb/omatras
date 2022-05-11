@@ -21,7 +21,7 @@ $(document).ready(function () {
 		spaceBetween: 17,
 		navigation: {
 			nextEl: ".stories-list .swiper-button-next",
-			prevEl: ".stories-sidebar .swiper-button-prev",
+			prevEl: ".stories-list .swiper-button-prev",
 		},
 		breakpoints: {
 			320: {
